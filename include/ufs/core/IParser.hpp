@@ -1,11 +1,12 @@
 #pragma once
 
 #include "ufs/core/Record.hpp"
-#include <vector>
 #include <filesystem>
 #include <string>
+#include <vector>
 
-namespace ufs::core {
+namespace ufs::core
+{
 
 /**
  * IParser is the contract every format parser must implement.
@@ -14,8 +15,9 @@ namespace ufs::core {
  * or a log parser — it just calls canParse() to find the right one,
  * then parse() to get Records back.
  */
-class IParser {
-public:
+class IParser
+{
+  public:
     virtual ~IParser() = default;
 
     // Returns true if this parser can handle the given file.

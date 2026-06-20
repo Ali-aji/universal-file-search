@@ -14,6 +14,9 @@ add_compile_options(-Wall -Wextra)
 # --- Core library (everything except main.cpp) ---
 add_library(ufs_core
     src/core/ParserRegistry.cpp
+    src/parsers/TextParser.cpp
+    src/parsers/LogParser.cpp
+    src/engine/SearchEngine.cpp
 )
 
 target_include_directories(ufs_core PUBLIC
