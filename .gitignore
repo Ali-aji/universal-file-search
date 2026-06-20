@@ -1,0 +1,87 @@
+# Build directories
+/build/
+/build-*/
+/cmake-build-*/
+/out/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+
+# Generated binaries
+*.exe
+*.out
+*.app
+
+# Static/Dynamic libraries
+*.a
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Object files
+*.o
+*.obj
+*.lo
+
+# Debug symbols
+*.pdb
+*.dSYM/
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+coverage-report/
+
+# Testing
+Testing/
+
+# IDE - VS Code
+.vscode/
+
+# IDE - CLion
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Linux
+.directory
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Cache
+.cache/
+
+# User-specific files
+*.user
+
+# Conan
+.conan/
+conanbuild/
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+
+# Benchmark outputs
+benchmarks/results/
+
+# Generated indexes (future)
+*.idx
