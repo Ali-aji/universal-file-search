@@ -44,11 +44,11 @@ target_include_directories(ufs_core PUBLIC
 target_link_libraries(ufs_core PUBLIC nlohmann_json::nlohmann_json)
 
 # --- Executable ---
-add_executable(fsearch
+add_executable(ufs
     src/main.cpp
 )
 
-target_link_libraries(fsearch PRIVATE ufs_core)
+target_link_libraries(ufs PRIVATE ufs_core)
 
 # --- Tests (added in a later phase) ---
 option(BUILD_TESTS "Build unit tests" OFF)
