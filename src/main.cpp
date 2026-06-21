@@ -2,6 +2,8 @@
 #include "ufs/parsers/LogParser.hpp"
 #include "ufs/parsers/TextParser.hpp"
 #include "ufs/engine/SearchEngine.hpp"
+#include "ufs/parsers/CsvParser.hpp"
+#include "ufs/parsers/JsonParser.hpp"
 
 #include <iostream>
 #include <string>
@@ -29,6 +31,8 @@ int main(int argc, char** argv) {
     // TextParser last as the fallback.
     ufs::core::ParserRegistry registry;
     registry.registerParser(std::make_shared<ufs::parsers::LogParser>());
+    registry.registerParser(std::make_shared<ufs::parsers::CsvParser>());
+    registry.registerParser(std::make_shared<ufs::parsers::JsonParser>());
     registry.registerParser(std::make_shared<ufs::parsers::TextParser>());
 
     ufs::engine::SearchEngine engine(registry);
